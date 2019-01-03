@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bella</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <i class="icon-menu burger-button" id="burger-menu"></i>
+  <header class="header">
+    <div class="container">
+      <figure class="logo">
+        <img src="images/logo.png" height="25" />
+      </figure>
+      <nav class="menu">
+        <ol>
+          <li>
+            <a href="#portafolio">Team</a>
+          </li>
+          <li>
+            <a href="#eventos">Features</a>
+          </li>
+          <li>
+            <a href="#contacto">Pricing</a>
+          </li>
+          <li>
+            <a href="#contacto">Contact</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="container-button">
+        <h1><strong>Bella</strong> Email Template </h1>
+        <button class="button-container" href="#">Get It Now
+          <img src="images/arrow_white.png" class="arrow-img" />
+        </button>
+        <button class="button-container" id="formButton">BOOK NOW</button>
+      </div>
+      <form id="form1">
+        <b>First Name:</b> <input type="text" name="firstName">
+        <br><br>
+        <b>Last Name: </b><input type="text" name="lastName">
+        <br><br>
+        <b> Age:</b>
+        <br>
+        <input type="radio" name="age" value="adolescent"> 0 - 19 years
+        <br>
+        <input type="radio" name="age" value="mid"> 20 - 59 years
+        <br>
+        <input type="radio" name="age" value="senior"> 60 + years
+        <br> <br>
+        <b>Preferred Color:</b>
+        <select name="color">
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="red">Red</option>
+          <option value="pink">Pink</option>
+        </select>
+        <br><br>
+        <b>Comment:</b>
+        <br>
+        <textarea name="comment">
+      Enter your comment here
+    </textarea>
+        <br><br>
+        <button type="button" id="submit">Submit</button>
+      </form>
+  </section>
+
+  <section id="portafolio">
+    <div class="container autowide">
+      <div class="module">
+        <p>phoncus ut, imperdiet vel venenatis vitae justo ullam dictum felis eu pede mollis pretium massa.</p>
+        <a href="#" class="module-text">READ MORE
+          <img src="images/arrow.png" class="arrow-img" />
+        </a>
+      </div>
+      <div class="module">
+        <p>phoncus ut, imperdiet vel venenatis vitae justo ullam dictum felis eu pede mollis pretium massa.</p>
+        <a href="#" class="module-text">READ MORE
+          <img src="images/arrow.png" class="arrow-img" />
+        </a>
+      </div>
+      <div class="module">
+        <p>phoncus ut, imperdiet vel venenatis vitae justo ullam dictum felis eu pede mollis pretium massa.</p>
+        <a href="#" class="module-text">READ MORE
+          <img src="images/arrow.png" class="arrow-img" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="eventos" class="container-sm">
+    <div class="container-lc">
+      <div class="layout">
+        <p class="col">
+          Donec quam felis ultricies nec pellentesque pretium quis sem massa quis enim. Donec pede justo fringilla vel
+          aliquet nec vulputate eget magnis montes ligula eget.
+          <br>
+          <img class="img-sm" src="images/authorimg_0.png" />
+        </p>
+        <p class="col">
+          Donec quam felis ultricies nec pellentesque pretium quis sem massa quis enim. Donec pede justo fringilla vel
+          aliquet nec vulputate eget magnis montes ligula eget.
+          <br>
+          <img class="img-sm" src="images/authorimg.png" />
+          <br>
+          Laurie Doe
+          <br>
+          <small>Marketing Expert</small>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <div class="container autowide-img">
+      <div class="module-img">
+        <img src="images/BRANDtaglinehere_0.png">
+      </div>
+      <div class="module-img">
+        <img src="images/BRANDtaglinehere_0.png">
+      </div>
+      <div class="module-img">
+        <img src="images/BRANDtaglinehere_0.png">
+      </div>
+      <div class="module-img">
+        <img src="images/BRANDtaglinehere_0.png">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-style">
+      <h1>Bella</h1>
+      <nav class="menu">
+        <ol class="menu-style">
+          <li>
+            <a href="#portafolio">Team</a>
+          </li>
+          <li>
+            <a href="#eventos">Features</a>
+          </li>
+          <li>
+            <a href="#contacto">Pricing</a>
+          </li>
+          <li>
+            <a href="#contacto">Contact</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    </div>
+  </footer>
+  <script>
+    const ipad = window.matchMedia('screen and (max-width: 767px)')
+    const menu = document.querySelector('.menu');
+    const burgerButton = document.querySelector('#burger-menu');
+    const formbutton = document.querySelector('#form-menu');
+
+    ipad.addListener(validation)
+
+    function validation(event) {
+      if (event.matches) {
+        burgerButton.addEventListener('click', hideShow)
+      } else {
+        burgerButton.removeEventListener('click', hideShow)
+      }
+    }
+    validation(ipad);
+
+    function hideShow() {
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+      } else {
+        menu.classList.add('is-active');
+      }
+    }
+
+    $(document).ready(function () {
+      $("#formButton").click(function () {
+        $("#form1").toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

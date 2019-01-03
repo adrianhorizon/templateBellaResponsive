@@ -1,2 +1,2 @@
 # desarrollo-web-template
-Proyecto realizado 
+web page static using jquery, css3 and HTML5
